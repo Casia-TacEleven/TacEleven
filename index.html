@@ -327,7 +327,7 @@
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-         A generative tactical discovery process in TacEleven.
+         A generative process of TacEleven for the game between PSG and Monaco in the 2022 season.
       </h2>
     </div>
   </div>
@@ -395,7 +395,16 @@
       <div class="item">
         <img src="static/images/overflow.jpg" alt="Overflow of the TacEleven" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          An overflow of TacEleven.
+          An overflow of TacEleven. (A), An intuitive example of LTG. The model takes an event description and a historical spatiotemporal graph as input and outputs a future spatiotemporal graph; both graphs are visualized as tactical sketches.
+          In the tactical sketches, the attacking direction is from left to right, with red representing teammates, blue representing opponents, and yellow representing the ball. Trajectories are illustrated from light to dark, culminating at the circles.
+          Players performing events are highlighted with yellow hexagons and their corresponding targets are highlighted with yellow crosses.
+          In this example, the input of the generator shows that Sanches passes to Verratti, and the output shows that Verratti passes to Neymar.
+          Note that minor abrupt bends in the trajectories are attributable to noise in the data.
+          (B), The generator–critic framework integrates three tasks with progressive tactical complexity: counterfactual exploration, single-step discovery and multi-step discovery.
+          In counterfactual exploration, the generator use counterfactual tactical search to produce tactical proposals aligned with high-level event descriptions.
+          In single-step discovery, the critic selects the most effective proposals with a high-level instructions.
+          Multi-step discovery selects proposals iteratively, with the generator producing successive steps in an autoregressive manner.
+          Together, these tasks create a counterfactual tactical tree search, enabling long-sequence tactic generation.
         </h2>
       </div>
     </div>
@@ -425,7 +434,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Multiple counterfactual outcomes generated under identical historical conditions</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
@@ -440,6 +449,46 @@
         <div class="item item-video3">
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
             <source src="static/videos/cf_sketches_pdf/Goalkeeper.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Left Attacking Midfield.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Left Center Back.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Left Defensive Midfield.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Left Wing Back.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Right Attacking Midfield.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Right Center Back.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Right Defensive Midfield.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/cf_sketches_pdf/Right Wing Back.mp4" type="video/mp4">
           </video>
         </div>
       </div>
